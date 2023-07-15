@@ -1,12 +1,11 @@
 #include <stdio.h>
-/*
- * main - print the size of various typesa based on
- * Description: print datatype
- * the computer it is compiled and run on..
- *
- * Return: Always 0
- */
 
+/**
+ * main - Prints the size of various types based on
+ *        the computer it is compiled and run on..
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int intType;
