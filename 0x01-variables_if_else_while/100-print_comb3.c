@@ -1,10 +1,9 @@
 #include <stdio.h>
-/*
- * main - the main activity to
- * prints all possible different combinations of two digits.
+/**
+ * main - Prints all possible combinations of two different digits,
+ *        in ascending order, separated by a comma followed by a space.
  *
  * Return: Always 0.
- *
  */
 int main(void)
 {
@@ -17,7 +16,6 @@ int main(void)
 		{
 			putchar((num1 % 10) + '0');
 			putchar((num2 % 10) + '0');
-
 			if (num1 == 8 && num2 == 9)
 				continue;
 			
@@ -25,7 +23,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-
 	putchar('\n');
 	return (0);
 
