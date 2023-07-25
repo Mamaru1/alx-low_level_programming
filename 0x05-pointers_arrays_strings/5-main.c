@@ -1,9 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-void rev_string(char *);
-
-/**
+/*
  * main - check the code
  *
  * Return: Always 0.
