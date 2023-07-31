@@ -11,18 +11,17 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
-	{
-		char *temp;
+	int i, j;
 
-		temp = haystack;
-		while (*needle == *haystack)
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			haystack++, needle++;
+			if (haystack[i + j] != needle[j])
+				break;
 		}
-		if (*needle == '\0')
-			return (temp);
-		haystack++;
+		if (!needle[j])
+			return (&haystack[i]);
 	}
-	return (0);
+	return (NULL);
 }
