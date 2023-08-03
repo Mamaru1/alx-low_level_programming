@@ -16,5 +16,7 @@ int _sqrt_recursion2(int a, int b);
 
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+int length_of_palindrome(char *a, int l);
+int comp_palindrome(char *x, int l);
 
 #endif
