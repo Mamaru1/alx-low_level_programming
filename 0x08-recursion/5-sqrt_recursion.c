@@ -13,19 +13,19 @@ int _sqrt_recursion(int n)
 	return (_sqrt_recursion2(n, 1));
 }
 /**
- * sqrt - recurses to find the natural
+ * _sqrt_recursion2 - recurses to find the natural
  * square root of a number
- * @n: number to calculate the sqaure root of
- * @i: iterator
+ * @x: number to calculate the sqaure root of
+ * @y: iterator
  *
  * Return: the resulting square root
  *
  */
-int _sqrt_recursion2(int a, int b)
+int _sqrt_recursion2(int x, int y)
 {
-	if (b * b == a)
-		return (b);
-	else if (b * b > a)
+	if (y * y == x)
+		return (y);
+	else if (y * y > x)
 		return (-1);
-	return (_sqrt_recursion2(a, b + 1));
+	return (_sqrt_recursion2(x, y + 1));
 }
